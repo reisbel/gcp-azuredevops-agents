@@ -27,6 +27,9 @@ Deploy pod to the cluster
 kubectl create -f k8s/gke-vsts-agent-ubuntu-1604.yaml
 ```
 
+Done! Now I we have 4 private agents running on Google Cloud!
+![image](https://user-images.githubusercontent.com/247003/52016218-f3d2ca80-24b1-11e9-9518-72d66c0c6223.png)
+
 # Azure Devops Agents Images:
 https://hub.docker.com/r/microsoft/vsts-agent
 
