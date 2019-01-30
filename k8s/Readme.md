@@ -17,6 +17,11 @@ Create cluster secrets
 $ kubectl create secret generic vsts --from-literal=VSTS_TOKEN=[VSTS_TOKEN] --from-literal=VSTS_ACCOUNT=[VSTS_ACCOUNT]
 ```
 
+Clone repository
+```
+git clone https://github.com/reisbel/gcp-azuredevops-agents && cd gcp-azuredevops-agents
+```
+
 Deploy pod to the cluster
 ```
 kubectl create -f k8s/gke-vsts-agent-ubuntu-1604.yaml
