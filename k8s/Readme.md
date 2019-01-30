@@ -1,10 +1,7 @@
 
 # Steps:
 
-Create GKE cluster
-https://cloud.google.com/kubernetes-engine/docs/quickstart
-
-Create cluster command on GCP
+Create cluster on GCP (https://cloud.google.com/kubernetes-engine/docs/quickstart)
 ```
 gcloud container clusters create [CLUSTER_NAME]
 ```
@@ -27,4 +24,5 @@ kubectl create -f k8s/gke-vsts-agent-ubuntu-1604.yaml
 
 # Azure Devops Agents Images:
 https://hub.docker.com/r/microsoft/vsts-agent
+
 https://github.com/Microsoft/vsts-agent-docker
