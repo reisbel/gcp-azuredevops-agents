@@ -1,17 +1,17 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: vsts-agent
+  name: ubuntu1604-agent-pool
 spec:
   replicas: 4
   template:
     metadata:
       labels:
-        app: vsts-agent
+        app: ubuntu1604-agent-pool
         version: "0.1"
     spec:
       containers:
-      - name: vsts-agent
+      - name: ubuntu1604-agent
         image: microsoft/vsts-agent:ubuntu-16.04-standard
         env:
           - name: VSTS_ACCOUNT
@@ -25,7 +25,7 @@ spec:
                 name: vsts
                 key: VSTS_TOKEN
           - name: VSTS_POOL
-            value: GCP
+            value: GCP Ubuntu 1604
         volumeMounts:
         - mountPath: /var/run/docker.sock
           name: docker-volume
