@@ -1,0 +1,1 @@
+gcloud compute instance-groups managed resize gce-azure-devops-vs2017-server2016 --size 5
